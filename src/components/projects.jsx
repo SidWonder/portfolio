@@ -1,10 +1,10 @@
 import React from 'react';
 import ProjectItem from "./projectItem";
 
-export default function Projects({projects}){
+export default function Projects({anchor, projects}){
     console.log(projects)
     return(
-        <section className='portfolio'>
+        <section className='portfolio' id={anchor}>
         <h2 className='portfolio__header'>Мои проекты</h2>
             <p className='portfolio__subheader'>Мои супер-дупер проекты</p>
             <ul className='portfolio__list'>

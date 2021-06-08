@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Skills() {
+export default function Skills({anchor}) {
 
     function onSkillCard(e){
         if(e.target.classList.contains('skills__item')){
@@ -13,7 +13,7 @@ export default function Skills() {
         }
     }
 
-return (<section className='skills'>
+return (<section className='skills' id={anchor}>
 <h2 className='skills__header'>Мои навыки</h2>
     <p className='skills__subheader'>Мои скилы/стек/обучалки/сертификаты</p>
     <ul className='skills__list'>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="TerminalProjectOptionsProvider">
-    <option name="passParentEnvs" value="false" />
+    <envs>
+      <env key="Path" value="C:\Python39\Scripts\;C:\Python39\;C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk-13.0.2\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Users\SidWonder\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\SidWonder\AppData\Local\Programs\Python\Python38-32\;C:\Users\SidWonder\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\SidWonder\AppData\Local\Yarn\bin;C:\Program Files\JetBrains\WebStorm 2020.1\bin;C:\Users\SidWonder\AppData\Local\gitkraken\bin;C:\Users\SidWonder\AppData\Local\Programs\Fiddler;C:\Users\SidWonder\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\MongoDB\Server\4.4\bin;C:\Users\SidWonder\AppData\Roaming\npm" />
+    </envs>
   </component>
 </project>

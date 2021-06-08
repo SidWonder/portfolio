@@ -15,6 +15,13 @@ function App() {
     const reposForPortfolio = ['react-mesto-auth', 'mesto', 'russian-travel', 'how-to-learn'];
     let reposFromApi = [];
 
+    const anchors = {
+        homeSection: 'homeSection',
+        projects: 'projects',
+        skills: 'skills',
+        contactForm: 'contactForm',
+    };
+
     React.useEffect(() => {
         async function fetchData() {
             const userInfo = await api.getRepos();
@@ -38,11 +45,11 @@ function App() {
 
     return (
         <div className="App">
-            <HomeSection/>
-            <NavMenu/>
-            <Projects projects = {repositories}/>
-            <Skills/>
-            <ContactForm/>
+            <HomeSection anchor={anchors.homeSection}/>
+            <NavMenu anchor={anchors}/>
+            <Projects anchor={anchors.projects} projects = {repositories}/>
+            <Skills anchor={anchors.skills}/>
+            <ContactForm anchor={anchors.contactForm}/>
             <Footer/>
         </div>
     );

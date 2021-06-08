@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default function ContactForm() {
-    return (<section className='contact-form'>
+export default function ContactForm({anchor}) {
+    return (<section className='contact-form' id={anchor}>
         <h2 className='contact-form__header'>Write me a letter, give me a call</h2>
         <span className='contact-form__subheader'></span>
         <form className='contact-form__form' action="#">

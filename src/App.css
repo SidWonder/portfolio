@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  scroll-behavior: smooth;
 }
 
 .App-logo {
@@ -22,6 +23,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
 
 .App-link {
@@ -47,6 +49,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-color: yellow;
+  scroll-behavior: smooth;
 }
 
 .homepage__header {
@@ -54,7 +57,23 @@
   padding: 0;
   text-align: center;
   color: white;
+  /*position: absolute;*/
   /*padding-top: 50%;*/
+}
+.homepage__overlay{
+  z-index: 0;
+}
+.homepage__overlay:before {
+  width: 100%;
+  background: rgba(42,44,47,1);
+  opacity: 0.5;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 .navbar {
 margin: 0;
@@ -66,7 +85,6 @@ margin: 0;
   border: 1px solid transparent;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   padding: 0 30px;
-
   /*min-height: 50px;*/
 }
 .navbar__list {

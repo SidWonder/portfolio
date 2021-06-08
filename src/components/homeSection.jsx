@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function HomeSection({handler}) {
+export default function HomeSection({anchor}) {
     const background = React.useRef(null);
     const [cords, SetCords] = React.useState(null);
 
@@ -18,9 +18,11 @@ export default function HomeSection({handler}) {
     window.addEventListener('scroll', handleScroll);
 
     return (<>
-        <section className='homepage' ref={background}>
+        <section className='homepage' id={anchor} ref={background}>
+            <div className='homepage__overlay'>
             <h1 className='homepage__header'>Алоха! Меня зовут Олег и я <span>Front-end разработчик</span> а если точнее, хочу им стать </h1>
             <div>тут будет ебучая кнопка</div>
+            </div>
         </section>
 
     </>)
