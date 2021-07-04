@@ -1,6 +1,8 @@
 import React from 'react';
+import arrowDown from '../img/utils/next.png'
 
 export default function HomeSection({anchor}) {
+    const {homeSection, skills} = anchor;
     const background = React.useRef(null);
     const [cords, SetCords] = React.useState(null);
 
@@ -12,16 +14,21 @@ export default function HomeSection({anchor}) {
     }
 
     React.useEffect(()=>{
-        background.current.style = `background-position: 50% -${cords}px;`
+        background.current.style = `background-position-y: ${cords}px;`
     }, [cords]);
 
     window.addEventListener('scroll', handleScroll);
 
     return (<>
-        <section className='homepage' id={anchor} ref={background}>
+        <section className='homepage' id={homeSection} ref={background}>
             <div className='homepage__overlay'>
             <h1 className='homepage__header'>Алоха! Меня зовут Олег и я <span>Front-end разработчик</span> а если точнее, хочу им стать </h1>
-            <div>тут будет ебучая кнопка</div>
+
+                <a className="homepage__link" href={`#${skills}`}>
+                    <div className="homepage__arrow homepage__arrow-animation">
+                        <img className="homepage__img" src={arrowDown} alt=""/>
+                    </div>
+                </a>
             </div>
         </section>
 

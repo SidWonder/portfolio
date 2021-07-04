@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectItem from "./projectItem";
 
-export default function Projects({anchor, projects}){
+export default function Projects({anchor, projects, previewLabels}){
     console.log(projects)
     return(
         <section className='portfolio' id={anchor}>

@@ -5,6 +5,7 @@ import Projects from "./components/projects";
 import Footer from "./components/footer";
 import Skills from "./components/skills";
 import ContactForm from "./components/contactForm";
+import PopupSkill from './components/popup/popup'
 
 import './App.css';
 import api from "./utils/api";
@@ -45,12 +46,15 @@ function App() {
 
     return (
         <div className="App">
-            <HomeSection anchor={anchors.homeSection}/>
+            <div className="page">
+            <HomeSection anchor={anchors}/>
             <NavMenu anchor={anchors}/>
-            <Projects anchor={anchors.projects} projects = {repositories}/>
             <Skills anchor={anchors.skills}/>
+            <Projects anchor={anchors.projects} projects = {repositories} previewLabels = {reposForPortfolio}/>
             <ContactForm anchor={anchors.contactForm}/>
             <Footer/>
+            </div>
+            {/*<PopupSkill />*/}
         </div>
     );
 }
