@@ -3,61 +3,61 @@ export const skillsDescr = [
         id: 1,
         title: 'HTML 5',
         icon: 'img/html.svg',
-        describe: 'Семантика, кроссбразуеровность, валидность, адаптив для меня не пустой звук. Верстаю красиво и по БЭМу.'
+        describe: 'Семантично, кроссбразуерно, валидно. '
     },
     {
         id: 8,
         title: 'CSS',
-        icon: 'img/CSS3.svg',
-        describe: 'Семантика, кроссбразуеровность.'
+        icon: 'img/css3.svg',
+        describe: 'Адаптивно, резиново, по БЭМу. Pixel Perfect для меня не пустой звук.'
     },
     {
         id: 2,
         title: 'JS',
         icon: 'img/javascript.svg',
-        describe: 'Семантика, кроссбразуеровность, валидность, адаптив '
+        describe: 'ES5/ES6, асинхронность, ООП.'
     },
     {
         id: 3,
         title: 'React JS',
         icon: 'img/react.svg',
-        describe: 'БЭМу.'
+        describe: 'Хуки спасут этот мир.'
     },
     {
         id: 4,
         title: 'SASS',
         icon: 'img/sass.svg',
-        describe: 'Семантика, кроссбразуеровность, вализвук. Верстаю красиво и по БЭМу.'
+        describe: 'Знаю, могу, практикую.'
     },
     {
         id: 5,
         title: 'webpack',
         icon: 'img/webpack.svg',
-        describe: 'Семантика, кроссбразуеровность, валидность, адаптив для меня не пустой звук. Верстаю красиво и по БЭМу.'
+        describe: 'Могу взять готовую настройку, а могу сам потратить вечер на настройку.'
     },
     {
         id: 6,
         title: 'SQL',
         icon: 'img/postgresql.svg',
-        describe: 'Семантика, кроссбразуеровность.'
+        describe: 'Могу объединить две таблицы для того, чтобы найти в кто в итоге подставил кролика Роджера.'
     },
     {
         id: 7,
         title: 'Git',
         icon: 'img/git.svg',
-        describe: 'Семантика, кроссбразуеровность, валидность, адаптив '
+        describe: 'Oh my sweet cherry pick. Git flow.'
     },
     {
         id: 8,
         title: 'figma',
         icon: 'img/figma.svg',
-        describe: 'БЭМу.'
+        describe: 'Кто-то еще верстает макеты с помощью фотошопа?'
     },
     {
         id: 94,
         title: 'API',
         icon: 'img/restApi_icon.png',
-        describe: 'Семантика, кроссбразуеровность, вализвук. Верстаю красиво и по БЭМу.'
+        describe: 'Самое крутое API - это API Покедекса!'
     },
 ]
 
