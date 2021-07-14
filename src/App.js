@@ -53,7 +53,6 @@ function App() {
             <ContactForm anchor={anchors.contactForm}/>
             <Footer/>
             </div>
-            {/*<PopupSkill />*/}
         </div>
     );
 }
