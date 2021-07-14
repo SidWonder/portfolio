@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './skillDescription.module.css'
 
 export default function SkillDescription({skill}) {
     const {title, icon, describe } = skill;
@@ -9,7 +10,7 @@ export default function SkillDescription({skill}) {
 
     },[describe])
    
-    return (<p className='skills__drop-description'>
+    return (<p className={style.description}>
         {skillDescribe}
         </p>)
 }

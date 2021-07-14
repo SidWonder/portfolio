@@ -1,11 +1,10 @@
 import React from 'react';
-import HomeSection from "./components/homeSection";
-import NavMenu from "./components/navMenu";
-import Projects from "./components/projects";
-import Footer from "./components/footer";
-import Skills from "./components/skills";
-import ContactForm from "./components/contactForm";
-import PopupSkill from './components/popup/popup'
+import HomeSection from "./components/homeSection/homeSection";
+import NavMenu from "./components/navMenu/navMenu";
+import Projects from "./components/projects/projects";
+import Footer from "./components/footer/footer";
+import Skills from "./components/skills/skills";
+import ContactForm from "./components/contactForm/contactForm";
 
 import './App.css';
 import api from "./utils/api";

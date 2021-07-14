@@ -1,0 +1,38 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 45px;
+    color: white;
+    background-color: black;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    margin-right: 15px;
+    align-self: center;
+    width: 45px;
+    height: 45px;
+    align-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.item:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.item:last-child {
+    margin-right: 0;
+}
+
+.icon {
+    width: 60%;
+    color: -internal-light-dark(black, white);
+    filter: invert(1);
+}
