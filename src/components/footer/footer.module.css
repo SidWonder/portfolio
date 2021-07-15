@@ -1,6 +1,6 @@
 .footer {
-    padding-top: 60px;
-    padding-bottom: 45px;
+    padding-top: 40px;
+    padding-bottom: 10px;
     color: white;
     background-color: black;
 }
@@ -35,4 +35,10 @@
     width: 60%;
     color: -internal-light-dark(black, white);
     filter: invert(1);
+}
+
+.subheader {
+    opacity: 0.5;
+    font-size: 0.8rem;
+    padding-top: 1rem;
 }
