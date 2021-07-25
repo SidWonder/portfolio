@@ -15,11 +15,11 @@ export default function HomeSection({anchor}) {
             <div className={ styles.overlay }>
             <h1 className={styles.header}>{HELLO}! <br/> Это Олег, и я <span>Front-end разработчик</span></h1>
 
-                <a className={styles.link} href={`#${skills}`}>
+                {/* <a className={styles.link} href={`#${skills}`}>
                     <div className={`${styles.arrow} ${styles['arrow-animation']}`}>
                         <img className={styles.img} src={arrowDown} alt=""/>
                     </div>
-                </a>
+                </a> */}
             </div>
         </section>
 

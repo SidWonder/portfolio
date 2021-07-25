@@ -1,10 +1,12 @@
 import React from 'react';
+import { Route, Switch, Redirect, BrowserRouter, useHistory } from 'react-router-dom';
 import HomeSection from "./components/homeSection/homeSection";
 import NavMenu from "./components/navMenu/navMenu";
 import Projects from "./components/projects/projects";
 import Footer from "./components/footer/footer";
 import Skills from "./components/skills/skills";
 import ContactForm from "./components/contactForm/contactForm";
+import AboutMe from './components/aboutMe/aboutMe';
 
 import './App.css';
 import api from "./utils/api";
@@ -28,7 +30,7 @@ function App() {
             return userInfo;
         }
         fetchData()
-            .then(data=> searchInApi(data, reposForPortfolio))
+            .then(data => searchInApi(data, reposForPortfolio))
             .catch(err => console.log(err));
     }, []);
 
@@ -46,12 +48,27 @@ function App() {
     return (
         <div className="App">
             <div className="page">
-            <HomeSection anchor={anchors}/>
-            <NavMenu anchor={anchors}/>
-            <Skills anchor={anchors.skills}/>
-            <Projects anchor={anchors.projects} projects = {repositories} previewLabels = {reposForPortfolio}/>
-            <ContactForm anchor={anchors.contactForm}/>
-            <Footer/>
+                <NavMenu anchor={anchors} />
+                <div className="main">
+                    <Switch>
+                        <Route exact path='/'>
+                            <HomeSection anchor={anchors} />
+                        </Route>
+                        <Route path="/about">
+                            <AboutMe />
+                        </Route>
+                        <Route path="/skills">
+                            <Skills anchor={anchors.skills} />
+                        </Route>
+                        <Route path="/projects">
+                            <Projects anchor={anchors.projects} projects={repositories} previewLabels={reposForPortfolio} />
+                        </Route>
+                        <Route path="/contact">
+                            <ContactForm anchor={anchors.contactForm} />
+                        </Route>
+                    </Switch>
+                </div>
+                <Footer />
             </div>
         </div>
     );

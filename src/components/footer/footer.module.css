@@ -3,6 +3,8 @@
     padding-bottom: 10px;
     color: white;
     background-color: black;
+    margin: auto;
+    width: 100%;
 }
 
 .list {

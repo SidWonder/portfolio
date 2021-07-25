@@ -80,5 +80,14 @@
     margin-bottom: 15px;
 }
 
-.footer__navbar {
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex-grow: 1;
+    position: relative;
+    /* top: -50px; */
 }
